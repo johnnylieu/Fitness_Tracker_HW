@@ -51,4 +51,6 @@ const workoutSchema = new Schema(
         }, 0);
     });
 
+    const Workout = mongoose.model("Workout", workoutSchema);
+
     module.exports = Workout;

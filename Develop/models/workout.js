@@ -50,3 +50,5 @@ const workoutSchema = new Schema(
             return total + exercise.duration;
         }, 0);
     });
+
+    module.exports = Workout;

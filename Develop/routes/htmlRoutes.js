@@ -1,15 +1,16 @@
+const router = require("express").Router();
 var path = require("path");
 
 module.exports = function (app) {
-    app.get("/exercise", function (req, res) {
+    router.get("/exercise", function (req, res) {
         res.sendFile(path.join(__dirname, "exercise.html"));
     });
 
-    app.get("/", function(req, res) {
+    router.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "index.html"));
     });
 
-    app.get("/stats", function(req, res) {
+    router.get("/stats", function(req, res) {
         res.sendFile(path.join(__dirname, "stats.html"))
     });
-}
+};

@@ -26,15 +26,15 @@ module.exports = function (app) {
         params
     }, res) => {
         Workout.findByIdAndUpdate(
-            params.id, {
-                $push: {
-                    exercises: body
+                params.id, {
+                    $push: {
+                        exercises: body
+                    }
+                }, {
+                    new: true,
+                    runValidators: true
                 }
-            }, {
-                new: true,
-                runValidators: true
-            }
-        )
+            )
             .then(data => res.json(data))
             .catch(err => {
                 console.log("app.put err", err)

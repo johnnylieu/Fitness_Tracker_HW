@@ -11,3 +11,15 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useFindAndModify: false
+})
+
+require("./public/apiRoutes")(app);
+require("./public/htmlRoutes")(app);
+
+app.listen(PORT, function(){
+    console.log(`Listening on port ${PORT}`)
+});

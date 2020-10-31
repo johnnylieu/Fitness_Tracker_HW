@@ -29,7 +29,6 @@ https://github.com/johnnylieu/Fitness_Tracker_HW/commits/master
 
 
 # Credits
-* https://www.youtube.com/watch?v=DBePtS8q6IA
 * I want to thank Plover Brown for helping me understand routing and MVCs.
 * I want to thank my TA Steven Landgraf for helping me link Atlas to Heroku.
 

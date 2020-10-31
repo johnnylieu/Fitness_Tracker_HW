@@ -26,8 +26,6 @@ For this app, the user can add, update, and log multiple exercises on a given da
 
 https://github.com/johnnylieu/Fitness_Tracker_HW/commits/master
 
-(keep in mind that I am a single dad with a 16 hour per day, 5 day per week job while attending this course)
-
 
 # Credits
 * I want to thank Plover Brown for helping me understand routing and MVCs.
